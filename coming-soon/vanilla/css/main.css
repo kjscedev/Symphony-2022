@@ -1,0 +1,271 @@
+body {
+  background-image: url("../assets/background.gif");
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-image: url("../assets/mobile_background.gif");
+  }
+}
+
+canvas {
+  /* height: 50vh;
+  width: 30vw; */
+  border: 6px solid #3e0d80 !important;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.logo {
+  width: 375px;
+  padding-bottom: 30px;
+}
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.am-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.gallery {
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+.gal-aftermovie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 30px;
+}
+
+.contact {
+  margin-top: 15px;
+  display: flex;
+  justify-content: right;
+  align-items: left;
+}
+.icons {
+  height: 30px;
+  margin: 4px;
+  cursor: pointer;
+}
+.gamecontainer {
+  padding-top: 50px;
+}
+
+.btn {
+  position: relative;
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #3e0d80;
+  border-radius: 0.6em;
+  color: #3e0d80;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+}
+.btn:hover {
+  color: #fff;
+  outline: 0;
+}
+.first {
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  border: 2px solid #3e0d80;
+  border-radius: 0.6em;
+}
+.first:hover {
+  box-shadow: 0 0 40px 40px #3e0d80 inset;
+  color: aliceblue;
+}
+
+.game-instruction {
+  text-align: center;
+  height: 20%;
+  padding-bottom: 50px;
+}
+
+.slider {
+  height: 2vh;
+  width: 10vw;
+  background-color: black;
+}
+
+.tictactoe {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reset {
+  margin: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery-container {
+    flex-direction: column;
+  }
+  #myCanvas {
+    height: 25vh;
+    width: 95vw;
+  }
+  .images {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* tictactoe */
+
+.wrapper {
+  height: 24rem;
+  width: 24rem;
+  display: grid;
+  grid-template-columns: repeat(3, 8rem);
+  grid-template-rows: repeat(3, 8rem);
+  user-select: none;
+  position: relative;
+  background-color: #fff;
+  border: 3px solid;
+  border-color: #3e0d80;
+  border-radius: 25px;
+}
+
+.box {
+  font-size: 7rem;
+  font-family: "Source Sans Pro";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #3e0d80;
+  color: #3e0d80;
+  
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    height: 18rem;
+    width: 18rem;
+    display: grid;
+    grid-template-columns: repeat(3, 6rem);
+    grid-template-rows: repeat(3, 6rem);
+  }
+
+  .box {
+    font-size: 5rem;
+  }
+}
+
+.box-1 {
+  border-width: 0 2px 2px 0;
+  border-top-left-radius: 25px;
+}
+
+.box-2 {
+  border-width: 0 2px 2px 2px;
+}
+
+.box-3 {
+  border-width: 0 0 2px 2px;
+  border-top-right-radius: 25px;
+}
+
+.box-4 {
+  border-width: 2px 2px 2px 0;
+}
+
+.box-6 {
+  border-width: 2px 0 2px 2px;
+}
+
+.box-7 {
+  border-width: 2px 2px 0 0;
+  border-bottom-left-radius: 25px;
+}
+
+.box-8 {
+  border-width: 2px 2px 0 2px;
+}
+
+.box-9 {
+  border-width: 2px 0 0 2px;
+  border-bottom-right-radius: 25px;
+}
+
+.option-box {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #3e0d80;
+  padding: 1rem;
+  font-family: "Source Sans Pro";
+  font-weight: 800;
+}
+
+.option-box .options {
+  font-size: 3rem;
+  display: flex;
+}
+
+.option-box .options .option {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.dialog-box {
+  padding: 5px 1rem;
+  font-size: 3rem;
+  white-space: nowrap;
+  background-color: #3e0d80;
+  border-radius: 20px;
+  color: aliceblue;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  font-family: "Source Sans Pro";
+}
+
+#reset {
+  padding: 6px 1rem;
+  background-color: transparent;
+  color: #3e0d80;
+  border: 2.5px solid;
+  border-color: #3e0d80;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Source Sans Pro";
+  font-size: 1.5rem;
+}
