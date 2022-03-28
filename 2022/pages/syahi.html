@@ -43,7 +43,7 @@
                         <li><a href="./shield.html" data-after="Shield">Shield</a></li>
                         <li><a href="./sponsors.html" data-after="Sponsors">Sponsors</a></li>
                         <li><a href="./rules.html" data-after="Rules">Rules</a></li>
-                        <li><a href="./reachus.html" data-after="Reachus">Reach Us</a></li>
+                        <li><a href="./reachus.html" data-after="OurTeam">Our Team</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,8 +55,8 @@
     <section class="hero-new" id="syahi-bg">
         <div class="hero container">
             <div class="syahi-mob">
-                <h1>Syahi</h1>
-                <p>An Odyssey for literature and art lovers, Syahi presents students with a unique blend of dramatic writing and creative art workshops along with immense opportunities to interact with screenwriters, authors, poets and artists of all kinds! Events like story-telling, poetry recitation, film workshops etc have left many awestruck.</p>
+                <h1 class="title-syahi">Syahi</h1>
+                <p class="syahi-desc">An Odyssey for literature and art lovers, Syahi presents students with a unique blend of dramatic writing and creative art workshops along with immense opportunities to interact with screenwriters, authors, poets and artists of all kinds! Events like story-telling, poetry recitation, film workshops etc have left many awestruck.</p>
                 <a href="#services" type="button" class="cta">Events</a>
                 <a href="https://bit.ly/syahi2022" type="button" class="cta">Register</a>
             </div>
@@ -122,4 +122,15 @@
         })
     </script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script>
+    var t = gsap.timeline();
+
+    window.onload = function(){
+        t.from('.title-syahi',0.5,{top:250,opacity:0
+        }).from('.syahi-desc',0.5,{top:250,opacity:0
+        }).from('.cta',0.5,{top:250,opacity:0
+        });
+    }
+</script>
 </html>

@@ -43,7 +43,7 @@
                         <li><a href="#hero" data-after="Shield">Shield</a></li>
                         <li><a href="./sponsors.html" data-after="Sponsors">Sponsors</a></li>
                         <li><a href="./rules.html" data-after="Rules">Rules</a></li>
-                        <li><a href="./reachus.html" data-after="Reachus">Reach Us</a></li>
+                        <li><a href="./reachus.html" data-after="OurTeam">Our Team</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,8 +55,8 @@
     <section class="hero-new" id="shield-bg">
         <div class="hero container">
             <div class="syahi-mob">
-                <h1>Shield</h1>
-                <p>It’s time to invite all the KJSCE’s technical departments for the annual branch face-off, otherwise known as KJSCE Cultural Shield 2022! With varied cultural competitions and enticing prizes on the line, bring your branch to glory in this epic clash of wits, finesse and talent! Etch your branch’s name on the Cultural Shield and claim the title of Shield 2022 for your department…Hurry up, Glory awaits for those who propel their team towards the summit! For further ‘know-whats’, contact your Branch Representative.</p>
+                <h1 class="title-syahi">Shield</h1>
+                <p class="syahi-desc">It’s time to invite all the KJSCE’s technical departments for the annual branch face-off, otherwise known as KJSCE Cultural Shield 2022! With varied cultural competitions and enticing prizes on the line, bring your branch to glory in this epic clash of wits, finesse and talent! Etch your branch’s name on the Cultural Shield and claim the title of Shield 2022 for your department…Hurry up, Glory awaits for those who propel their team towards the summit! For further ‘know-whats’, contact your Branch Representative.</p>
                 <a href="#services" type="button" class="cta">Events</a>
             </div>
         </div>
@@ -173,4 +173,15 @@
         })
     </script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script>
+    var t = gsap.timeline();
+
+    window.onload = function(){
+        t.from('.title-syahi',0.5,{top:250,opacity:0
+        }).from('.syahi-desc',0.5,{top:250,opacity:0
+        }).from('.cta',0.5,{top:250,opacity:0
+        });
+    }
+</script>
 </html>

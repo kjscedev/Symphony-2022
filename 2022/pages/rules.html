@@ -43,7 +43,7 @@
                         <li><a href="./shield.html" data-after="Shield">Shield</a></li>
                         <li><a href="./sponsors.html" data-after="Sponsors">Sponsors</a></li>
                         <li><a href="#hero" data-after="Rules">Rules</a></li>
-                        <li><a href="./reachus.html" data-after="Reachus">Reach Us</a></li>
+                        <li><a href="./reachus.html" data-after="OurTeam">Our Team</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,8 +55,8 @@
     <section class="hero-new" id="rules-bg">
         <div class="hero container">
             <div  class="syahi-mob">
-                <h1>General Rules</h1>
-                <p>Symphony caters to over 20,000 attendees each year. Each attendee has availed the benefit of watching various cultural events and entertainment while maintaining caution during the 3-day fest aiding us in enabling the safety of the crowd. With this being said in the overview, follow the guideline laid below.</p>
+                <h1 class="title-syahi">General Rules</h1>
+                <p class="syahi-desc">Symphony caters to over 20,000 attendees each year. Each attendee has availed the benefit of watching various cultural events and entertainment while maintaining caution during the 3-day fest aiding us in enabling the safety of the crowd. With this being said in the overview, follow the guideline laid below.</p>
                 <a href="#rules" type="button" class="cta">Read More...</a>
             </div>
         </div>
@@ -106,4 +106,15 @@
         })
     </script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script>
+    var t = gsap.timeline();
+
+    window.onload = function(){
+        t.from('.title-syahi',0.5,{top:250,opacity:0
+        }).from('.syahi-desc',0.5,{top:250,opacity:0
+        }).from('.cta',0.5,{top:250,opacity:0
+        });
+    }
+</script>
 </html>

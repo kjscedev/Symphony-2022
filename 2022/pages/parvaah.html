@@ -43,7 +43,7 @@
                         <li><a href="../pages/shield.html" data-after="Shield">Shield</a></li>
                         <li><a href="./sponsors.html" data-after="Sponsors">Sponsors</a></li>
                         <li><a href="./rules.html" data-after="Rules">Rules</a></li>
-                        <li><a href="./reachus.html" data-after="Reachus">Reach Us</a></li>
+                        <li><a href="./reachus.html" data-after="OurTeam">Our Team</a></li>
                     </ul>
                 </div>
             </div>
@@ -125,4 +125,15 @@
         })
     </script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script>
+    var t = gsap.timeline();
+
+    window.onload = function(){
+        t.from('.parvaah-logo',0.5,{top:250,opacity:0
+        }).from('.parvaah-desc',0.5,{top:250,opacity:0
+        }).from('.voluteen-btn',0.5,{top:250,opacity:0
+        }).from('.event-card',0.5,{top:250,opacity:0});
+    }
+</script>
 </html>

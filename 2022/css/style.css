@@ -321,6 +321,10 @@ a{
     background-color: #F9982F;
 }
 
+.cta{
+    position: relative;
+}
+
 #shield-bg{
     background-image: url('../assets/Shield.png');
 }
@@ -331,6 +335,12 @@ a{
 
 #rules-bg{
     background-image: url('../assets/rules.png');
+}
+.title-syahi{
+    position: relative;
+}
+.desc-syahi{
+    position: relative;
 }
 /*End Hero Section*/
 
@@ -577,6 +587,18 @@ a{
 .pic-9{
     background-image: url('../assets/parvaah/mangroove.png');
 }
+.parvaah-logo{
+    position: relative;
+}
+.parvaah-desc{
+    position: relative;
+}
+.voluteen-btn{
+    position: relative;
+}
+.event-card{
+    position: relative;
+}
 /*End Parvaah Page Styling*/
 
 /* Reach Us Page Styling*/
@@ -605,6 +627,12 @@ a{
     text-align: center;
     padding-top: 150px;
     padding-bottom: 50px;
+}
+.sector{
+    position: relative;
+}
+.rup-card{
+    position: relative;
 }
 #reach-us .sector h1{
     font-size: 40px;
@@ -741,6 +769,7 @@ table tr td{
 .heading-ps{
     margin-top: 100px;
     text-align: center;
+    position: relative;
 }
 
 .heading-ps h1{

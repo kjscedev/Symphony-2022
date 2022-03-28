@@ -42,7 +42,7 @@
               <li><a href="#sponsors" data-after="Sponsors">Sponsors</a></li>
               <li><a href="./rules.html" data-after="Rules">Rules</a></li>
               <li>
-                <a href="./reachus.html" data-after="Reachus">Reach Us</a>
+                <a href="./reachus.html" data-after="OurTeam">Our Team</a>
               </li>
             </ul>
           </div>
@@ -1337,4 +1337,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="../js/sponsor.js" async defer></script>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script>
+    var t = gsap.timeline();
+
+    window.onload = function(){
+        t.from('.main-content',0.5,{top:250,opacity:0
+        });
+    }
+</script>
 </html>
